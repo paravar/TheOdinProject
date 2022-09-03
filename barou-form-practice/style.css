@@ -1,0 +1,29 @@
+:root {
+  --left: clamp(15rem, 35vw, 45rem);
+  --right: calc(100vw - var(--left));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, sans-serif;
+  color: rgb(22, 22, 22);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  width: var(--left);
+  border: 5px solid black;
+}
+
+.right {
+  display: flex;
+  width: var(--right);
+  border: 5px solid red;
+}
