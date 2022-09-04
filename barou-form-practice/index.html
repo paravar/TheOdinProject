@@ -12,7 +12,7 @@
       <h1 class="text-logo">Barou</h1>
     </div>
     <div class="right">
-      <div class="form-description">
+      <div class="description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
         dicta earum? Placeat odit dolore numquam vel sed error inventore sint
         vitae excepturi ut ratione, quisquam consectetur laborum rem
@@ -20,8 +20,50 @@
         <br /><br />
         Sign up <em>now</em>.
       </div>
-      <form action="post" id="registration"></form>
-      <div class="submit-footer"></div>
+      <form action="post" id="signup-form">
+        <h2>Let's do this!</h2>
+        <div class="inpus">
+          <div class="col1">
+            <label for="name"
+              >FIRST NAME<input type="text" tabindex="1" id="name" required
+            /></label>
+            <label for="email"
+              >EMAIL<input type="email" tabindex="3" id="email" required
+            /></label>
+            <label for="password"
+              >PASSWORD<input
+                type="password"
+                tabindex="5"
+                id="password"
+                required
+            /></label>
+          </div>
+          <div class="col2">
+            <label for="lname"
+              >LAST NAME<input type="text" tabindex="2" id="lname" required
+            /></label>
+            <label for="phone-number"
+              >PHONE NUMBER<input
+                type="tel"
+                tabindex="4"
+                id="phone-number"
+                required
+            /></label>
+            <label for="confirm-password"
+              >CONFORM PASSWORD<input
+                type="password"
+                tabindex="6"
+                id="confirm-password"
+                required
+            /></label>
+          </div>
+        </div>
+      </form>
+      <div class="submit-footer">
+        <button type="submit" form="sugnup-form">Create Account!</button>
+        <br />
+        <span>Already have an account?<a href="http://">Log in</a></span>
+      </div>
     </div>
   </body>
 </html>

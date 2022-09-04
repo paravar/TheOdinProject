@@ -19,11 +19,31 @@ body {
 .left {
   display: flex;
   width: var(--left);
+  justify-content: center;
+  padding: 20vh 1rem 0 1rem;
   border: 5px solid black;
+  background: no-repeat center / cover
+    url("./assets/saj-shafique-6dhPDQaFFVc-unsplash.jpg");
+}
+
+.logo-text {
+}
+
+.logo {
 }
 
 .right {
   display: flex;
   width: var(--right);
+  flex-flow: column nowrap;
   border: 5px solid red;
+}
+
+.description {
+  display: flex;
+  border: 5px solid green;
+}
+
+form {
+  display: flex;
 }
