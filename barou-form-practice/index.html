@@ -9,7 +9,8 @@
   </head>
   <body>
     <div class="left">
-      <h1 class="text-logo">Barou</h1>
+      <h1 class="logo-text">Barou</h1>
+      <img src="./assets/Barou 2.svg" alt="logo" class="logo" />
     </div>
     <div class="right">
       <div class="description">
@@ -22,7 +23,7 @@
       </div>
       <form action="post" id="signup-form">
         <h2>Let's do this!</h2>
-        <div class="inpus">
+        <!-- <div class="inputs">
           <div class="col1">
             <label for="name"
               >FIRST NAME<input type="text" tabindex="1" id="name" required
@@ -56,6 +57,45 @@
                 id="confirm-password"
                 required
             /></label>
+          </div>
+        </div> -->
+        <div class="inputs">
+          <div class="col1">
+            <label for="fname">FIRST NAME</label>
+            <input
+              type="text"
+              required
+              tabindex="1"
+              placeholder=" "
+              id="fname"
+            />
+            <label for="">EMAIL</label>
+            <input type="email" required tabindex="3" placeholder=" " />
+            <label for="">PASSWORD</label>
+            <input
+              class="password-left"
+              type="password"
+              required
+              tabindex="5"
+              placeholder=" "
+            />
+            <div class="password-error">
+              <div class="content">* Passwords do not match</div>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="">LAST NAME</label>
+            <input type="text" required tabindex="2" placeholder=" " />
+            <label for="">PHONE NUMBER</label>
+            <input type="tel" required tabindex="4" placeholder=" " />
+            <label for="">CONFIRM PASSWORD</label>
+            <input
+              class="password-right"
+              type="password"
+              required
+              tabindex="6"
+              placeholder=" "
+            />
           </div>
         </div>
       </form>
