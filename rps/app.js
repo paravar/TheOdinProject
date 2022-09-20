@@ -19,7 +19,7 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-function play5Rounds() {
+/* function play5Rounds() {
   let computerScore = 0;
   let playerScore = 0;
   for (let i = 0; i < 5; i++) {
@@ -48,4 +48,4 @@ function play5Rounds() {
   }
 }
 
-play5Rounds();
+play5Rounds(); */
