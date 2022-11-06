@@ -1,0 +1,201 @@
+:root {
+  --white: #fffbfb;
+  --grey: #f0eef1;
+  --black: #050505;
+  --red: #ff7070;
+  --light-green: #9fff9c;
+  --light-red: #ff9c9c;
+  --border-radius: 8px;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 40px;
+  --container-width: 1200px;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--grey);
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  /* margin support should be added below */
+  margin-bottom: 100px;
+}
+
+button,
+input {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="text"],
+input[type="number"] {
+  cursor: text;
+}
+
+.header {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: var(--spacing-lg);
+  text-align: center;
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+
+.btn {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  transition: filter 0.15s ease-in-out;
+}
+
+.main {
+  margin-top: var(--spacing-lg);
+  text-align: center;
+}
+
+.btn {
+  font-family: inherit;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+}
+
+.btn-add {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn-light-red {
+  background-color: var(--light-red);
+}
+
+.btn-light-green {
+  background-color: var(--light-green);
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: var(--spacing-sm);
+}
+
+.fa-github {
+  font-size: 24px;
+  color: var(--black);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%) scale(0);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  background-color: var(--grey);
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#addBookForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.error-msg {
+  display: none;
+  color: red;
+}
+
+.error-msg.active {
+  display: block;
+  /* needs margin after completion */
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+#isRead {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+#is-Read {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: var(--white);
+}
+
+#addBookForm button {
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
