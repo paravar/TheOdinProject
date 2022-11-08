@@ -32,27 +32,10 @@ html {
 body {
   background-color: var(--grey);
   color: var(--black);
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  /* margin support should be added below */
   margin-bottom: 100px;
-}
-
-button,
-input {
-  border: none;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  cursor: pointer;
-  outline: none;
-}
-
-input[type="text"],
-input[type="number"] {
-  cursor: text;
 }
 
 .header {
@@ -69,15 +52,20 @@ input[type="number"] {
   max-width: var(--container-width);
 }
 
-.btn {
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--border-radius);
-  transition: filter 0.15s ease-in-out;
-}
-
 .main {
   margin-top: var(--spacing-lg);
   text-align: center;
+}
+
+button,
+input {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  outline: none;
 }
 
 .btn {
@@ -88,6 +76,12 @@ input[type="number"] {
   cursor: pointer;
   border-radius: var(--border-radius);
   border-radius: var(--border-radius);
+  transition: filter 0.15s ease-in-out;
+}
+
+input[type="text"],
+input[type="number"] {
+  cursor: text;
 }
 
 .btn-add {
@@ -105,27 +99,6 @@ input[type="number"] {
 
 button:hover {
   filter: brightness(90%);
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: var(--spacing-sm);
-}
-
-.fa-github {
-  font-size: 24px;
-  color: var(--black);
-  transition: transform 0.3s ease-in-out;
-}
-
-.fa-github:hover {
-  transform: rotate(360deg) scale(1.2);
 }
 
 .modal {
@@ -169,19 +142,19 @@ button:hover {
   border-radius: var(--border-radius);
 }
 
-#isRead {
+#isread {
   display: flex;
   gap: var(--spacing-md);
 }
 
-#is-Read {
+#is-read {
   width: 20px;
   height: 20px;
   margin-top: 4px;
   accent-color: var(--white);
 }
 
-#addBookForm button {
+#addbookform button {
   width: 100%;
 }
 
@@ -198,4 +171,25 @@ button:hover {
 
 .overlay.active {
   display: block;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: var(--spacing-sm);
+}
+
+.fa-github {
+  font-size: 24px;
+  color: var(--black);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
 }
