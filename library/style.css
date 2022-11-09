@@ -32,22 +32,21 @@ html {
 body {
   background-color: var(--grey);
   color: var(--black);
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 100px;
+  word-wrap: break-word;
 }
 
 .header {
   background-color: var(--white);
   box-shadow: var(--shadow);
-  display: flex;
-  justify-content: center;
 }
 
 .container {
   padding: var(--spacing-lg);
-  text-align: center;
+  /* text-align: center; */
   margin: 0 auto;
   max-width: var(--container-width);
 }
@@ -55,6 +54,12 @@ body {
 .main {
   margin-top: var(--spacing-lg);
   text-align: center;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 button,
@@ -101,6 +106,8 @@ button:hover {
   filter: brightness(90%);
 }
 
+/* Modal */
+
 .modal {
   position: fixed;
   z-index: 1;
@@ -119,45 +126,6 @@ button:hover {
   transform: translate(-50%, -50%) scale(1);
 }
 
-#addBookForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-lg);
-}
-
-.error-msg {
-  display: none;
-  color: red;
-}
-
-.error-msg.active {
-  display: block;
-  /* needs margin after completion */
-}
-
-.input {
-  width: 100%;
-  padding: 10px;
-  border-radius: var(--border-radius);
-}
-
-#isread {
-  display: flex;
-  gap: var(--spacing-md);
-}
-
-#is-read {
-  width: 20px;
-  height: 20px;
-  margin-top: 4px;
-  accent-color: var(--white);
-}
-
-#addbookform button {
-  width: 100%;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -172,6 +140,71 @@ button:hover {
 .overlay.active {
   display: block;
 }
+
+#addBookForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  width: 100%;
+}
+
+#error-msg {
+  display: none;
+  color: red;
+  margin-top: -15px;
+}
+
+#error-msg.active {
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+/*  */
+
+#isread {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+#is-read {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: var(--white);
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  line-height: 1.2;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+/* Footer */
 
 .footer {
   position: absolute;

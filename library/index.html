@@ -27,17 +27,7 @@
     </header>
     <main class="main container">
       <button class="btn btn-add" id="addBookBtn">+ Add book</button>
-      <div id="bookGrid">
-        <div class="bookCard">
-          <p>48 Laws of Power</p>
-          <p>Robert Greene</p>
-          <p>352</p>
-          <div class="btn">
-            <button class="btn">Read</button>
-            <button class="btn">Remove</button>
-          </div>
-        </div>
-      </div>
+      <div class="booksGrid" id="booksGrid"></div>
     </main>
     <footer class="footer">
       <p>
@@ -63,11 +53,11 @@
           maxlength="100"
           required
         />
-        <p class="error-msg"></p>
+        <p class="error-msg" id="error-msg"></p>
         <input
           type="text"
           class="input"
-          id="Author"
+          id="author"
           placeholder="Author"
           maxlength="100"
           required
@@ -81,8 +71,8 @@
           required
         />
         <div id="isRead">
-          <label for="is-Read">Have you read it?</label>
-          <input type="checkbox" id="is-Read" />
+          <label for="is-read">Have you read it?</label>
+          <input type="checkbox" id="is-read" />
         </div>
         <button type="submit" class="btn btn-light-green">Submit</button>
       </form>
