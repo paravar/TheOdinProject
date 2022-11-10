@@ -27,7 +27,9 @@ class Library {
     this.books = this.books.filter((book) => book.title !== title)
   }
 
-  getbook() {}
+  getBook(title) {
+    return this.books.find((book) => book.title === title)
+  }
 
   isInLibrary(newBook) {
     return this.books.some((book) => book.title === newBook.title)
@@ -85,11 +87,22 @@ const addBook = (e) => {
   closeAddBookModal()
 }
 
-//TODO: Toggle read
-const toggleRead = (e) => {}
+const toggleRead = (e) => {
+  const title =
+    e.target.parentNode.parentNode.firstChild.textContent.replaceAll('"', "")
+  const book = library.getBook(title)
+  book.isRead = !book.isRead
+  saveLocal()
+  updateBooksGrid()
+}
 
-//TODO: Remove book
-const removeBook = (e) => {}
+const removeBook = (e) => {
+  const title =
+    e.target.parentNode.parentNode.firstChild.textContent.replaceAll('"', "")
+  library.removeBook(title)
+  saveLocal()
+  updateBooksGrid()
+}
 
 const updateBooksGrid = () => {
   resetBooksGrid()
@@ -102,7 +115,6 @@ const resetBooksGrid = () => {
   booksGrid.innerHTML = ""
 }
 
-//TODO: create bookCard
 const createBookCard = (book) => {
   const bookCard = document.createElement("div")
   const title = document.createElement("p")
@@ -163,4 +175,6 @@ const JSONToBook = (book) => {
   return new Book(book.title, book.author, book.pages, book.isRead)
 }
 
+restoreLocal()
+updateBooksGrid()
 // TODO: FireBase storage if possible
