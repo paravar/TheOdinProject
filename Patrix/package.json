@@ -1,0 +1,22 @@
+{
+  "name": "patrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.2.2",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0"
+  }
+}
