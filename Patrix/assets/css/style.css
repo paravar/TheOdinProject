@@ -10826,7 +10826,7 @@ textarea.form-control-lg {
   font-family: "Poppins", sans-serif;
 }
 .display-2--description {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block;
   margin-top: 1.2rem;
   text-transform: none;
@@ -10836,6 +10836,26 @@ textarea.form-control-lg {
     font-size: 1.4rem;
     display: inline-block;
   }
+}
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #9926f0;
 }
 
 .menu {
@@ -10880,6 +10900,24 @@ textarea.form-control-lg {
 }
 .border-animation--border-2 {
   animation-delay: 1.5s;
+}
+
+.companies {
+  padding: 0 0 5rem 0;
+}
+.companies__logo-box {
+  max-width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+.companies__logo-box img {
+  height: 100%;
+}
+.companies__logo-box img:hover {
+  filter: grayscale(120);
 }
 
 /*# sourceMappingURL=style.css.map */

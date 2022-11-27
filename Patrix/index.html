@@ -7,6 +7,7 @@
     <title>Learning bootstarp v5 with sass</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
@@ -88,7 +89,7 @@
               />
               <a
                 href="#"
-                class="position-absolute top-50 start-50 translate-middle"
+                class="glightbox position-absolute top-50 start-50 translate-middle"
               >
                 <span> <i class="fas fa-play-circle"></i> </span
                 ><span
@@ -110,7 +111,89 @@
         ></path>
       </svg>
     </section>
-
+    <!-- START THE COMPANIES SECTION -->
+    <section id="companies" class="companies">
+      <div class="container">
+        <div class="row text-center">
+          <h4 class="fw-bold lead mb-3">Trusted by companies like</h4>
+          <div class="heading-line mb-5"></div>
+        </div>
+      </div>
+      <!-- START THE COMPANIES CONTENT -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-1.png"
+                alt="company 1 logo"
+                title="Compnay 1 logo"
+                class="image-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-2.png"
+                alt="company 2 logo"
+                title="Compnay 2 logo"
+                class="image-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-3.png"
+                alt="company 3 logo"
+                title="Compnay 3 logo"
+                class="image-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-4.png"
+                alt="company 4 logo"
+                title="Compnay 4 logo"
+                class="image-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-5.png"
+                alt="company 5 logo"
+                title="Compnay 5 logo"
+                class="image-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="images/companies/campany-6.png"
+                alt="company 6 logo"
+                title="Compnay 6 logo"
+                class="image-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        href: 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+        type: 'video',
+        source: 'youtube', //vimeo, youtube or local
+        width: 900,
+      })
+    </script>
     <script src="/assets/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
