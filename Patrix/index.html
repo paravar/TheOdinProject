@@ -14,54 +14,33 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- START NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" alt="logo image"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="logo image">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">faq</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+        <button type="button" class="rounded-pill btn-rounded">
+          +1 728365413
+          <span>
+            <i class="fas fa-phone-alt"></i>
+          </span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Faq</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <button type="button" class="rounded-pill btn-rounded">
-            +1 728365413<span><i class="fas fa-phone-alt"></i></span>
-          </button>
-        </div>
       </div>
-    </nav>
+    </div>
+  </nav>
     <!-- START THE INTRO SECTION -->
     <section id="home" class="intro-section">
       <div class="container">
@@ -186,15 +165,13 @@
       </div>
     </section>
     <!-- START SECTION 4 - THE SERVICES -->
-    <section class="our-services" id="services">
+    <section class="services" id="services">
       <div class="container">
         <div class="row text-center">
           <h2 class="display-3 fw-bold">Our Services</h2>
           <div class="heading-line mb-1"></div>
         </div>
-      </div>
-      <!-- START THE DESCRIPTION CONTENT -->
-      <div class="container">
+        <!-- START THE DESCRIPTION CONTENT -->
         <div class="row pt-2 pb-2 mt-0 mb-3">
           <div class="col-md-6 border-right">
             <div class="bg-white p-3">
@@ -221,7 +198,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
             <div class="services__content">
-              <div class="icon fas fa-paper-plane"></div>
+              <div class="icon d-block fas fa-paper-plane"></div>
               <h3 class="display-3--title mt-1">Marketing</h3>
               <p class="lh-lg">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -237,8 +214,10 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+          >
+            <div class="services__pic">
               <img
                 src="images/services/service-1.png"
                 alt="marketing illustration"
@@ -249,8 +228,10 @@
         </div>
         <!-- START THE WEB DEVELOPEMENT CONTENT -->
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start"
+          >
+            <div class="services__pic">
               <img
                 src="images/services/service-2.png"
                 alt="web-development illustration"
@@ -259,8 +240,8 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
-              <div class="icon fas fa-code"></div>
+            <div class="services__services">
+              <div class="icon d-block fas fa-code"></div>
               <h3 class="display-3--title mt-1">Web Development</h3>
               <p class="lh-lg">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -281,7 +262,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
             <div class="services__content">
-              <div class="icon fas fa-cloud-upload-alt"></div>
+              <div class="icon d-block fas fa-cloud-upload-alt"></div>
               <h3 class="display-3--title mt-1">Could Hosting</h3>
               <p class="lh-lg">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -297,8 +278,10 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end"
+          >
+            <div class="services__pic">
               <img
                 src="images/services/service-3.png"
                 alt="cloud-hosting illustration"
