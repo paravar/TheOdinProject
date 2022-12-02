@@ -10874,6 +10874,7 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .display-3--title {
     margin-top: 1.8rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -10972,7 +10973,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .services__content .icon {
-    margin-top: 2.5rem;
+    font-size: 2.5rem;
   }
 }
 .services__pic {
